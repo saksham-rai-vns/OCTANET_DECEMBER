@@ -1,0 +1,132 @@
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: sans-serif;}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.first {
+    z-index: -1;
+    width: 30%;
+    height: 100vh;
+    background-color: #566156;
+}
+.second {
+    z-index: -1;
+    width: 40%;
+    height: 100vh;
+    background-color: #494a49;
+}
+.third {
+    z-index: -1;
+    width: 30%;
+    height: 100vh;
+    background-color: red;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    justify-content: space-between;
+    margin: 0 10px;
+    align-items: center;
+}
+.logo
+{
+    color: red; 
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    height: 90%;
+
+}
+.logo:first-letter{
+    color: white;
+}
+.menu a{
+ 
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    
+}
+
+.icon{
+    width: 100px;
+    height: 90%;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+}
+.plate
+{
+    position:absolute;
+    right: 50px;
+    top: 200px;
+ }
+ .plate img{
+    border-radius: 50%;
+ }
+.text{
+    position: absolute ;
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-size: 50px;
+}
+button{
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    border: none;
+   cursor: pointer;
+}
+/* for mobile phone */
+@media (max-width:600px) {
+    nav{
+        top: 10px;
+        left: 0;
+    }
+    nav .logo{
+        font-size: 30px;
+    }
+    nav .menu{
+        display: none;
+    }
+    nav .icon{
+        display: none;
+    }
+    
+    .plate{
+        top: 300px;
+        width: 200px;
+        height: 200px;
+    }
+    .text{
+        font-size: 30px;
+        top: 20%;
+    }
+}
+/* for tablets and dedsktop */
+@media (max-width:601px) and (max-width:1024px) {
+    
+}
+/* for larger devices */
+@media (max-width:1025){
+
+}
+
+.menu-bar{
+    height: 30px;
+    width: 30px;
+    background: red;
+}
